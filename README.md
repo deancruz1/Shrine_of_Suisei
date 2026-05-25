@@ -1,6 +1,6 @@
 # Shrine of Suisei
 
-A single-page fan site dedicated to Hoshimachi Suisei, the divine comet from Hololive. Built with raw HTML, CSS, and JavaScript as an early front-end project exploring layout fundamentals, custom fonts, and responsive design, done during my time learning under The Odin Project. Inspired by Lyrenide's Hakurei Shrine.
+A single-page fan site dedicated to Hoshimachi Suisei, the divine comet from Hololive. Built with raw HTML, CSS, and JavaScript as an early front-end project exploring layout fundamentals, custom fonts, and responsive design, done during my time learning under The Odin Project. Inspired by Lyrenide's [Hakurei Shrine](https://github.com/weathiern/Hakurei_Shrine).
 
 ## Features
 - **Responsive layout**: Adapts background images, hero section, and navigation for mobile and desktop.
