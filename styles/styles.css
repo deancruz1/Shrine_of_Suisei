@@ -375,13 +375,15 @@ a {
 
 /* ===== Quote Section ===== */
 .quote-section {
-  background: url(../resources/suisei-1.jpg) center / cover fixed;
+  background: url(../resources/suisei-1.jpg) 50% 0% / cover fixed;
+  background-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 6rem 2rem;
   text-align: center;
+  font-family: "psycho";
 }
 
 .quote-text {
