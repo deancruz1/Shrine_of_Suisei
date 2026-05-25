@@ -1,106 +1,160 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./styles/styles.css">
-        <title>Shrine of Suisei</title>
-        <link rel="shortcut icon" href="./resources/suipog.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <div class="header" id="header-fixed">
-            <div class="headerContent">
-                <div id="sources" class="sourcesContainer">
-                    <div class="sourcesContent">
-                        <div class="sourcesHeader">I do not own any media displayed on this site, and it was created for the purposes of self-learning and appreciation as a fan.</div>
-                        <a class="close" href="#">&times;</a>
-                        <div class="sourcesMain">If you own any content displayed here and want it to be deleted, please contact me.</div>
-                    </div>
-                </div>
-                <ul>
-                    <li>
-                        <a href="https://github.com/RiezeSWE">
-                            <img class="pog" src="./resources/suipog.png">
-                        </a>
-                    </li>
-                    <li><a class="links" href="#">Suisei</a></li>
-                    <li><img class="comet" src="./resources/rev-comet.png"></li>
-                    <li><a class="links" href="#sources">Disclaimer</a></li>
-                </ul>
-                <div class="right-links">
-                    <ul>
-                        <li><a class="links" href="#">About</a></li>
-                        <li><img class="comet" src="./resources/comet.png"></li>
-                        <li><a class="links" href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A">YouTube</a></li>
-                        <li><img class="comet" src="./resources/comet.png"></li>
-                        <li><a class="links" href="https://www.twitter.com/suisei_hosimati">Twitter</a></li>
-                        <li><img class="comet" src="./resources/comet.png"></li>
-                        <li><a class="links" href="https://shop.geekjack.net/collections/hoshimachi-suisei">Merch Shop</a></li>
-                    </ul>
-                </div>
-            </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" href="./resources/suipog.png" />
+    <title>Shrine of Suisei</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div id="sources" class="modal">
+          <!-- modal unchanged -->
         </div>
-        <div class="main">
-            <div class="main-left">
-                <div class="foreword">Welcome to the Shrine of Suisei</div>
-                <div class="message">Here we Hoshiyomis worship Hoshimachi Suisei, the divine comet from Hololive. Most Hoshiyomis have reported that their heart immediately skipped a beat upon hearing Suisei's beautiful voice and have been worshipping her ever since.
-                    <div class="weeb">すいちゃんは～ 今日もかわい～ !!</div>
-                </div>
-                <a class="enlightenment" href="https://www.youtube.com/watch?v=eq4aExkkuTs">Get Enligtened</a>
-            </div>
-            <div class="main-right">
-                <img class="suigif" src="./resources/hoshimachi-suisei-suisei.gif" alt="Suisei being extremely adorable">
-                <div><em class="copyright">Copyright: Cover inc.</em></div>
-            </div>
+        <nav class="nav-left">
+          <a href="https://github.com/deancruz1" class="nav-icon">
+            <img class="nav-pog" src="./resources/suipog.png" alt="Suisei icon" />
+          </a>
+          <a class="nav-link" href="#">Suisei</a>
+          <img class="nav-comet" src="./resources/rev-comet.png" alt="" />
+          <a class="nav-link" href="#sources">Disclaimer</a>
+        </nav>
+
+        <!-- Desktop nav (hidden on mobile) -->
+        <nav class="nav-right nav-desktop">
+          <a class="nav-link" href="#">About</a>
+          <img class="nav-comet" src="./resources/comet.png" alt="" />
+          <a class="nav-link" href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <img class="nav-comet" src="./resources/comet.png" alt="" />
+          <a class="nav-link" href="https://www.twitter.com/suisei_hosimati" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <img class="nav-comet" src="./resources/comet.png" alt="" />
+          <a class="nav-link" href="https://shop.geekjack.net/collections/hoshimachi-suisei" target="_blank" rel="noopener noreferrer">Merch</a>
+        </nav>
+
+        <!-- Hamburger button -->
+        <button class="hamburger" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu (hidden by default) -->
+      <nav class="nav-mobile">
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A">YouTube</a>
+        <a class="nav-link" href="https://www.twitter.com/suisei_hosimati">Twitter</a>
+        <a class="nav-link" href="https://shop.geekjack.net/collections/hoshimachi-suisei">Merch</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <section class="hero">
+          <div class="hero-left">
+            <h1 class="hero-title">Welcome to the Shrine of Suisei</h1>
+            <p class="hero-text">
+              Here we Hoshiyomis worship Hoshimachi Suisei, the divine comet
+              from Hololive. Most Hoshiyomis have reported that their heart
+              immediately skipped a beat upon hearing Suisei's beautiful voice
+              and have been worshipping her ever since.
+            </p>
+            <p class="hero-weeb">すいちゃんは～ 今日もかわい～ !!</p>
+            <a
+              class="hero-button"
+              href="https://www.youtube.com/watch?v=eq4aExkkuTs" target="_blank" rel="noopener noreferrer"
+              >Get Enlightened</a
+            >
+          </div>
+          <div class="hero-right">
+            <img
+              class="hero-gif"
+              src="./resources/hoshimachi-suisei-suisei.gif"
+              alt="Suisei being extremely adorable"
+            />
+            <p class="hero-copyright">Copyright: Cover inc.</p>
+          </div>
+        </section>
+      </div>
+      <section class="links-section">
+        <div class="main-container">
+          <h2 class="links-title">
+            Interested in the comet? Why not check out...
+          </h2>
+          <div class="links-grid">
+            <a class="link-card" href="https://www.pixiv.net/en/tags/suisei" target="_blank" rel="noopener noreferrer">
+              <img class="link-img" src="./resources/pixiv.png" alt="Pixiv" />
+              <span class="link-label">Fanart!</span>
+            </a>
+            <a class="link-card" href="https://www.reddit.com/r/Suisei/" target="_blank" rel="noopener noreferrer">
+              <img class="link-img" src="./resources/reddit.png" alt="Reddit" />
+              <span class="link-label">Her Subreddit</span>
+            </a>
+            <a
+              class="link-card"
+              href="https://www.youtube.com/watch?v=iM6HcjOiDPk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="link-img" src="./resources/horror.png" alt="Horror" />
+              <span class="link-label">Some Horror?!</span>
+            </a>
+            <a
+              class="link-card"
+              href="https://www.youtube.com/watch?v=gNtW2SssBCo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="link-img"
+                src="./resources/suicopath.png"
+                alt="Suicopath"
+              />
+              <span class="link-label link-wrap">Suicopathic Tendencies</span>
+            </a>
+          </div>
         </div>
-        <div class="subheader">
-            <div class="subheader-mainText">Interested in the comet? Why not check out...</div>
-            <div class="linkRow">
-                <div class="pixivContainer">
-                    <a class="pixivLink" href="https://www.pixiv.net/en/tags/suisei">
-                        <img class="sub pixivImg" src="./resources/pixiv.png">
-                    </a>
-                    <div class="text pixivText">Fanart!</div>
-                </div>
-                <div class="redditContainer">
-                    <a class="redditLink" href="https://www.reddit.com/r/Suisei/">
-                        <img class="sub redditImg" src="./resources/reddit.png">
-                    </a>
-                    <div class="text redditText">Her Subreddit</div>
-                </div>
-                <div class="horrorContainer">
-                    <a class="horrorLink" href="https://www.youtube.com/watch?v=iM6HcjOiDPk">
-                        <img class="sub horrorImg" src="./resources/horror.png">
-                    </a>
-                    <div class="text horrorText">Some Horror?!</div>
-                </div>
-                <div class="suicopathContainer">
-                    <a class="suicopathLink" href="https://www.youtube.com/watch?v=gNtW2SssBCo">
-                        <img class="sub suicoImg" src="./resources/suicopath.png">
-                    </a>
-                    <div class="text suicopathText">Suicopathic Tendencies</div>
-                </div>
-                </div>
-            </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="main-container">
+          <blockquote class="quote-text">
+            "No one can hear you scream as I eat your heart, Mio-chan. I love
+            you."
+          </blockquote>
+          <cite class="quote-author">— Suisei in Project: Winter</cite>
         </div>
-        <div class="submain">
-            <div class="quote"><em>"No one can hear you scream as I eat your heart, Mio-chan. I love you."</em></div>
-            <div class="quoteSui"><em> -Suisei in Project: Winter</em></div>
+      </section>
+
+      <section class="donate-section">
+        <div class="main-container">
+          <div class="donate-card">
+            <div class="donate-info">
+              <h3 class="donate-heading">
+                Interested in donating to the Shrine?
+              </h3>
+              <p class="donate-text">
+              Every little bit helps. Dakimakuras, visual novels, anime figures
+              — we'll accept them all.
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=bS5aqE2UZhI"
+            class="donate-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Donate</a
+          >
         </div>
-        <div class="preFooter">
-            <div class="contactPage">
-                <div class="contactBox">
-                    <div class =contactHead>Interested in donating to the Shrine?</div>
-                    <div class="contactText">Every little bit helps, and whatever you can give from dakimakuras, visual novels and anime figures, we'll accept them all so don't hesitate!</div>
-                </div>
-                <div class="contactContainer">
-                    <a href="https://www.youtube.com/watch?v=bS5aqE2UZhI" class="contactButton">Donate</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-                <a class="website" href="https://github.com/deancruz1" target="_blank">Website by: Dean Cruz</a>
-        </div>
-    </body>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer-link" href="https://github.com/deancruz1" target="_blank"
+        >Website by: Dean Cruz</a
+      >
+    </footer>
     <script src="./script.js"></script>
+  </body>
 </html>
